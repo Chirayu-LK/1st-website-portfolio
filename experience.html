@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>experience/portfolio></title>
+    <style>
+        body{
+            height: 100vh;
+            margin: 0;
+            background-image: radial-gradient(rgb(12, 12, 83),rgb(54, 6, 122));
+            font-family: "Estonia", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .Header{
+            height: 45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: linear-gradient(rgb(35, 3, 16),rgb(23, 7, 60));
+        }
+        .list{
+            list-style-type: none;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+        }
+        .Headerright{
+            width: 40%;
+            display: flex;
+            align-items: center;
+        }
+        .Headerleft{
+            font-size: 34px;
+            color: seashell;
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .link{
+            
+            color: beige;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .link:hover{
+            color: rgb(255, 189, 118);
+            font-size: 20px;
+        }
+        #exp{
+            display: flex;
+            flex-direction: row;
+            color: beige;
+            font-weight: bolder;
+            background-color: rgb(3, 13, 117);
+            display: flex;
+            justify-content: center;
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Header">
+        <div class="Headerleft">Portfolio</div>
+        <div class="Headerright">
+            <ul class="list">
+                <li><a class="link" href="Home.html" target="_self">Home</a></li>
+                <li><a class="link" href="about.html" target="_self">about</a></li>
+                <li><a class="link" href="experience.html" target="_self">experience</a></li>
+                <li><a class="link" href="contact.html" target="_self">contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <h1 id="exp"> Experience </h1>
+        <div id="job">
+        </div>
+    </div>
+</body>
+</html>

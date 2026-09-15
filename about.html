@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio/about</title>
+    <style>
+        body{
+            height: 100vh;
+            margin: 0;
+            background-image: radial-gradient(rgb(12, 12, 83),rgb(54, 6, 122));
+            font-family: "Estonia", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .Header{
+            height: 45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: linear-gradient(rgb(35, 3, 16),rgb(23, 7, 60));
+        }
+        .list{
+            list-style-type: none;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+        }
+        .Headerright{
+            width: 40%;
+            display: flex;
+            align-items: center;
+        }
+        .Headerleft{
+            font-size: 34px;
+            color: seashell;
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .link{
+            
+            color: beige;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .link:hover{
+            color: rgb(255, 189, 118);
+            font-size: 20px;
+        }
+        #intro{
+            color: antiquewhite;
+        }
+        h1{
+            background-color: rgb(3, 13, 117);
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 48px;
+        }
+        #am{
+            max-width: 800px;
+            margin: 20px auto;
+            color: #F1F0FF;
+            font-family: Arial,sans-serif;
+            font-size: 18px;
+            line-height: 1.7;
+            text-align: center;
+        }
+        h2{
+            background-color: rgb(3, 13, 117);
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 48px;
+        }
+        #risen ul {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 30PX;
+            text-align: center;
+            list-style-type: none;
+            color: antiquewhite;
+            align-items: center;
+        }
+        .rise:nth-child(5){
+            grid-column: 2;
+        }
+        .rise:nth-child(6){
+            grid-column: 3;
+        }
+        h4{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: aliceblue;
+        }
+        #int{
+            box-sizing: border-box;
+            border: 5px solid black;
+            border-radius: 20px;
+            background-color: #eb8909;
+            width: 200px;
+            height: 70px;
+            text-align: center;
+            font-size: 20px;
+        }
+        #hw{
+            box-sizing: border-box;
+            border: 5px solid black;
+            border-radius: 20px;
+            background-color: #eb8909;
+            width: 200px;
+            height: 70px;
+            text-align: center;
+            font-size: 20px;
+        }
+        #cl{
+            box-sizing: border-box;
+            border: 5px solid black;
+            border-radius: 20px;
+            background-color: #eb8909;
+            width: 200px;
+            height: 70px;
+            text-align: center;
+            font-size: 20px;
+        }
+        #fm{
+            box-sizing: border-box;
+            border: 5px solid black;
+            border-radius: 20px;
+            background-color: #eb8909;
+            width: 200px;
+            height: 70px;
+            text-align: center;
+            font-size: 20px;
+        }
+        #blrp{
+            box-sizing: border-box;
+            border: 5px solid black;
+            border-radius: 20px;
+            background-color: #eb8909;
+            width: 200px;
+            height: 70px;
+            text-align: center;
+            font-size: 20px;
+            flex-wrap: wrap;
+        }
+        #dsp{
+            box-sizing: border-box;
+            border: 5px solid black;
+            border-radius: 20px;
+            background-color: #eb8909;
+            width: 200px;
+            height: 70px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .rise{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        #ten{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-content: space-around;
+        }
+        #headleft{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: antiquewhite;
+        }
+        #p{
+            font-size: 22px;
+            font-weight: bold;
+            color: #eb8909;
+        }
+        #dip{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-content: space-around;
+        }
+        #picleft img{
+            width: 500px;
+            height: auto;
+        }
+        #headright{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color:antiquewhite;
+        }
+        #pr{
+            font-weight: bold;
+            font-size: 22px;
+            color: #eb8909;
+
+        }
+        #peq{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div class="Header">
+        <div class="Headerleft">Portfolio</div>
+        <div class="Headerright">
+            <ul class="list">
+                <li><a class="link" href="Home.html" target="_self">Home</a></li>
+                <li><a class="link" href="about.html" target="_self">about</a></li>
+                <li><a class="link" href="experience.html" target="_self">experience</a></li>
+                <li><a class="link" href="contact.html" target="_self">contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="intro">
+        <h1>About Me</h1>
+        <p id="am">
+            Total <b>20 years</b> of experience in automative industry in the field of <b>quality assurance</b>, <b>supplier quality</b>, <b>standards room and after sales servicing</b> of mining truck tipper bodies and tipping cylinders, <b>service manager/Quality manager</b> handling pan india service of mining tipper bodies along with wet kit servicing. <b><i>Handeled team of 12 members</i></b> to cater speedy response to customer across regions
+        </p>
+    </div>
+    <div id="values">
+        <h2>personal Values</h2>
+        <h4>I Beleive in</h4>
+        <div id="risen">
+        <ul type="square">
+            <li class="rise" id="int">Integrity</li>
+            <li class="rise" id="hw">Hard Work</li>
+            <li class="rise" id="cl">Continous Learning</li>
+            <li class="rise" id="fm">Family</li>
+            <li class="rise" id="blrp">Building Long-Term Relationships</li>
+            <li class="rise" id="dsp">Discipline</li>
+            
+        </ul>
+        </div>
+    </div>
+    <div id="edu">
+        <h2>Educational background</h2>
+        <div id="ten">
+            <div>
+                <h3 class="hdleft" id="headleft">KVV High School</h3>
+                <p id="p">I Have completed my 10th From Kvv High Schooll, Vijaynagar, Banglore</p>
+            </div>
+            <div id="pic right">
+                <img src="kvv.jpg">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div id="dip">
+            <div id="picleft">
+                <img src="sjp.avif">
+            </div>
+            <div>
+                <h3 id="headright">SJ (GOVT.) Polytechnic</h3>
+                <p id="pr">i have secured my diploma from SJ (GOVT.) Polytechnic(2000 graduate)</p>
+            </div>
+        </div>
+    </div>
+    <div id="pq">
+        <h2>personal Qoute</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p id="peq"><i>"Be Yourself, Everyone Else Is Taken"</i></p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
